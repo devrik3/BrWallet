@@ -466,6 +466,212 @@ footer .socialMedia .creditos p{
 	header .nav-mobile i{display: block;}
 	.left-menu{display: none;}
 	footer{position: absolute;bottom: 0;}
+		.indique,
+	.convide,
+	.nft,
+	.ativos,
+	.googleADS{display: none;}
+	.dashboard{
+		width: 95%;
+		height: 80%;
+		left: 0;
+		right: 0;
+		top: 26rem;
+		margin: 0 auto;
+		background: #333;
+		padding: 2.5%;
+		box-shadow: 3px 3px 5px rgba(0,0,0, .20);
+		z-index: 1;
+	}
+	.dashboard h2{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		font-size: 1.5rem;
+		margin: 1% 0;
+		color: #ECECED;
+	}
+	.dashboard p{
+		font-family: 'Segoe UI', sans-serif;
+		font-weight: 200;
+		font-size: 1rem;
+		color: #A3A4A9;
+		margin: 0 auto;
+	}
+	.dashboard span{display: inline-flex;}
+	.dashboard .saldoBank{font-size: 2.2rem;}
+	.dashboard .porcent{color: #4FF175; margin-left: 1%;}
+	.dashboard .hidden{
+		position: absolute; 
+		color: #A3A4A9;
+		right: 3%;
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+	.dashboard .hidden i{position: absolute; right: 3.5%;}
+	.dashboard .hidden .view{display: none;}
+	.end{
+		user-select: text;
+		user-drag: text;
+		-webkit-user-drag: none;
+	}
+	.end::selection{background: #A3A4A9;}
+	.carteira{margin: 5% 0;}
+	.dashboard .interacaoMenu{
+		width: 100%;
+		display: inline-flex;	
+	}
+	.dashboard .interacaoMenu button{
+		width: 25rem;
+		height: 2.3rem;
+		font-size: .8rem;
+		font-family: 'Segoe UI', sans-serif;
+		font-weight: 400;
+		color: #A3A4A9;
+		background: #2C2C2C;
+		border: 1.5px solid #2C2C2C;
+		box-shadow: 1px 2px 3px rgba(0,0,0, .25);
+		text-align: center;
+		display: inline-flex;
+		vertical-align: center;
+		align-items: center;
+		justify-content: center;
+		margin: 1.5%;
+		cursor: pointer;
+		padding: 1px;
+	}
+	.dashboard .interacaoMenu button:hover{transform: scale(1.04);}
+	.dashboard .interacaoMenu button:active{transform: scale(1);}
+	.dashboard .analytics{display: none;}
+	.dashboard .paragraph{
+		text-align: center;
+		margin: 2% 0;
+	}
+	.dashboard .paragraph::after{
+		content: '';
+		background: currentColor;
+		width: 34.5%;
+		height: 1.5px;
+		display: inline-flex;
+		margin-left: 1%;
+	}
+	.dashboard .paragraph::before{
+		content: '';
+		background: currentColor;
+		width: 34.5%;
+		height: 1.5px;
+		display: inline-flex;
+		margin-right: 1%;
+	}
+	.dashboard .analyticsAtivos{
+		background: #A3A4A9;
+		width: 18rem;
+		height: 16rem;
+		position: absolute;
+		right: 3%;
+		top: 49%;
+		display: block;
+	}
+	.dashboard .value{	
+		display: inline-flex;
+	}
+	.dashboard .ativosMercado{
+		margin: 2%;
+	}
+	.dashboard .Ac2{
+		margin: 1% 0 2%;
+	}
+	.dashboard .Ac2:hover{
+		cursor: pointer;
+		margin-left: 2%;
+	}
+	.dashboard .ativosMercado i{
+		color: #F6E018;
+	}
+	.fa-btc{margin: 0 .5% 0;}
+	.transacoes{
+		position: relative;
+		width: 63%;
+		height: 15rem;
+		bottom: 20%;
+		left: 31%;
+		background: #333;
+		padding: 2%;
+		box-shadow: 1.5px 2px 3.5px rgba(0,0,0, .10);
+		margin: 0  0 4%;
+		display: none;
+	}
+	.transacoes h2{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		font-size: 1.5rem;
+		margin: -1% 0 5%;
+		color: #ECECED;
+	}
+	.transacoes .transacoesClient h2{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		font-size: 1rem;
+		margin: 0 auto;
+		color: #ECECED;
+	}
+	.transacoes .transacoesClient p{
+		font-family: 'Segoe UI', sans-serif;
+		font-weight: 200;
+		font-size: 1rem;
+		color: #A3A4A9;
+		margin: 0 3% 0;
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.transacoes .transacoesClient .pagamento{color: #2BFF18;}
+	.transacoes .transacoesClient .attention{margin: 0 .5% 0;}
+	footer{
+		width: 100%;
+		height: 13rem;
+		background: #333;
+		position: absolute;
+		bottom: -20%;
+		left: 0;
+		display: flex;
+		padding: 1rem;
+		justify-content: center;
+		flex-wrap: nowrap;
+		z-index: 3;
+	}
+	footer h2{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		font-size: 1.3rem;
+		margin: 1% 0;
+		color: #ECECED;
+		text-align: left;
+	}
+	footer ul li, footer ul li a{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 200;
+		font-size: 1rem;
+		color: #A3A4A9;
+	}
+	footer .socialMedia a{
+		font-size: 1rem;
+		color: #A3A4A9;
+	}
+	footer .socialMedia .mediaSocial{
+		font-size: 1.5rem;
+		margin: 1%;
+		text-align: center;
+	}
+	footer .linksUteis{margin: 0 5% 1%;}
+	footer .socialMedia li{margin: .5% 0 50%; display: inline-flex; text-align: center;}
+	footer .nftFooter{margin: 0 4.5% 1%;}
+	footer li a:hover{text-decoration: underline;}
+	footer .socialMedia .creditos p{
+		font-family: 'Segoe UI', sans-serif;
+		font-weight: 200;
+		font-size: 1rem;
+		color: #A3A4A9;
+		display: none;
+	}
 }
 @keyframes toggle{
 	from{width: 30%;}
