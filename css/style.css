@@ -479,10 +479,10 @@ footer .socialMedia .creditos p{
 	.googleADS{display: none;}
 	.dashboard{
 		width: 95%;
-		height: 80%;
+		height: 70%;
                 position: absolute;
 		left: 50%;
-		top: 10%;
+		top: 25%;
                 tranform: translate(-0%, -50%;
 		margin: 0 auto;
 		background: #333;
