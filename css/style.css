@@ -438,7 +438,7 @@ footer .socialMedia .creditos p{
 	display: inline-flex;
 }
 ::marker{color: rgba(43, 255, 24, .45);}
-@media (max-width: 1200px){
+@media screen  and (max-width: 1200px){
 	body{overflow-x: hidden;}
 	header .nav{display: none;}
 	header{
