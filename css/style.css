@@ -480,9 +480,10 @@ footer .socialMedia .creditos p{
 	.dashboard{
 		width: 95%;
 		height: 80%;
-		left: 0;
-		right: 0;
-		top: 26rem;
+                position: absolute;
+		left: 50%;
+		top: 10%;
+                tranform: translate(-0%, -50%;
 		margin: 0 auto;
 		background: #333;
 		padding: 2.5%;
