@@ -438,12 +438,12 @@ footer .socialMedia .creditos p{
 	display: inline-flex;
 }
 ::marker{color: rgba(43, 255, 24, .45);}
-@media (max-width: 1050px){
+@media (max-width: 1200px){
 	body{overflow-x: hidden;}
 	header .nav{display: none;}
 	header{
 		padding: 1.5% 0;
-		height: 7vw;
+		height: 4vh;
 	}
 	header .nav-menu{
 		background: #333;
@@ -452,6 +452,9 @@ footer .socialMedia .creditos p{
 		animation: toggle .5s ease-in-out;
 		display: none;
 		transition: all .3s ease;
+		position: absolute;
+		z-index: 2;
+		box-shadow: 3px 3px 6px rgba(0,0,0, .15);
 	}
 	header .nav-menu ul li{
 		color: #A3A4A9;
@@ -462,11 +465,14 @@ footer .socialMedia .creditos p{
 		display: block;
 		margin: 1.5%;
 	}
-	header .nav-menu ul li a{color: #C9E9F2;}
+	header .nav-menu ul li a{color: #A3A4A9;}
 	header .nav-mobile i{display: block;}
 	.left-menu{display: none;}
-	footer{position: absolute;bottom: 0;}
-		.indique,
+	.erro p{
+		display: block;
+		font-size: .8rem;
+	}
+	.indique,
 	.convide,
 	.nft,
 	.ativos,
@@ -685,5 +691,4 @@ body::-webkit-scrollbar,.dashboard::-webkit-scrollbar{
 	background: #333;
 
 }
-
 * button:focus{outline: none;}
