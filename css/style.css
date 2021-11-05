@@ -1,0 +1,483 @@
+*{
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	font-family: 'open Sans';
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+/*font-family: 'Fruktur', cursive;*/
+* a{
+	text-decoration: none;
+}
+html,body{scroll-behavior: smooth; overflow-x: hidden;}
+body{background: #282A36;}
+header{
+	width: 100%;
+	background: #333;
+	height: 6.5vw;
+	color: #C9E9F2;
+	text-align: center;
+	padding: .5% 0;
+}
+header h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.8rem;
+	text-align: center;
+	color: transparent;
+	display: inline-block;
+	/*background: rgb(245,233,0);
+	background: radial-gradient(circle, rgba(245,233,0,1) 45%, rgba(17,141,47,1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;*/
+}
+.green{color: #118D2F;}
+.yellow{color: #F6E001;}
+header .nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: .5% 0;
+}
+header .nav ul li{
+	list-style: none;
+	margin: 0 1%;
+	display: flex;
+}
+header .nav ul li a{
+	color: #A3A4A9;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 200;
+	text-align: right;
+	display: inline-flex;
+}
+header .nav-mobile i{
+	position: absolute;
+	top: 1.6%;
+	left: 1.6%;
+	color: #6C6E76;
+	font-size: 2rem;
+	display: none;
+	cursor: pointer;
+}
+header .nav-menu{display: none;}
+header .nav-mobile .btc{display: none;}
+header .nav ul li a:hover{font-weight: 400; filter: brightness(80%);}
+header .account h2{
+	position: absolute;left: 0;
+} 
+.indique{
+	margin: 1%;
+	background: #333;
+	width: 22rem;
+	height: 10rem;
+	border-radius: 5px;
+	box-shadow: 2px 3px 4px rgba(0,0,0, .15);
+	text-align: center;
+	padding: .3%;
+}
+.indique h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin: 1% 0;
+	color: #ECECED;
+}
+.indique p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+	max-width: 75%;
+	margin: 0 auto;
+	margin-bottom: 1%;
+}
+.indique form input{
+	width: 45%; 
+	height: 1.5rem; 
+	text-align: center; 
+	text-transform: uppercase;
+	background: #3E3E3E;
+	border: 1.5px solid #353535;
+	color: #BABABA;
+}
+.indique form button{
+	width: 25%; 
+	height: 1.7rem; 
+	text-align: center; 
+	text-transform: uppercase;
+	background: #3E3E3E;
+	border: 1.5px solid #353535;
+	color: #BABABA;
+	cursor: pointer;
+}
+.indique form input:focus, .indique form button:focus{
+	box-shadow: 0 0 0;
+	outline: none;
+}
+.erro p{
+	display: block;
+	font-size: .8rem;
+}
+.nft{
+	margin: 1%;
+	background: #333;
+	width: 22rem;
+	height: 12.5rem;
+	border-radius: 5px;
+	box-shadow: 2px 3px 4px rgba(0,0,0, .15);
+	text-align: center;
+	padding: .3%;
+}
+.nft h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin: 1% 0;
+	color: #ECECED;
+}
+.nft p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+	max-width: 95%;
+	margin: 0 auto;
+	margin-bottom: 1%;
+}
+.convide{
+	margin: 1%;
+	background: #333;
+	width: 22rem;
+	height: 8.7rem;
+	border-radius: 5px;
+	box-shadow: 2px 3px 4px rgba(0,0,0, .15);
+	text-align: center;
+	padding: .3%;
+}
+.convide h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin: 1% 0;
+	color: #ECECED;
+}
+.convide p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+	max-width: 80%;
+	margin: 0 auto;
+	margin-bottom: 1%;
+}
+.ativos{
+	margin: 1%;
+	background: #333;
+	width: 22rem;
+	height: 8.7rem;
+	border-radius: 5px;
+	box-shadow: 2px 3px 4px rgba(0,0,0, .15);
+	text-align: center;
+	padding: .3%;
+}
+.ativos h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin: 1% 0;
+	color: #ECECED;
+}
+.ativos p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+	max-width: 80%;
+	margin: 0 auto;
+	margin-bottom: 1%;
+}
+.googleADS{
+	margin: 0 1% 0;
+	background: #A3A4A9;
+	width: 22rem;
+	height: 17.7rem;
+	border-radius: 5px;
+	box-shadow: 2px 3px 4px rgba(0,0,0, .15);
+	text-align: center;
+	padding: .3%;
+	position: absolute;
+}
+.googleADS p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #333;
+	margin-bottom: 1%;
+	display: flex;
+	vertical-align: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 29% 0;
+}
+.dashboard{
+	position: absolute;
+	width: 63%;
+	height: 40rem;
+	top: 28.5rem;
+	right: 2%;
+	transform: translate(-0%, -50%);
+	background: #333;
+	padding: 2%;
+	box-shadow: 3px 3px 5px rgba(0,0,0, .20);
+}
+.dashboard h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin: 1% 0;
+	color: #ECECED;
+}
+.dashboard p{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+	margin: 0 auto;
+}
+.dashboard span{display: inline-flex;}
+.dashboard .saldoBank{font-size: 2.2rem;}
+.dashboard .porcent{color: #4FF175; margin-left: 1%;}
+.dashboard .hidden{
+	position: absolute; 
+	color: #A3A4A9;
+	right: 3%;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.dashboard .hidden i{position: absolute; right: 3.5%;}
+.dashboard .hidden .view{display: none;}
+.end{
+	user-select: text;
+	user-drag: text;
+	-webkit-user-drag: none;
+}
+.end::selection{background: #A3A4A9;}
+.carteira{margin: 5% 0;}
+.dashboard .interacaoMenu button{
+	width: 15rem;
+	height: 2.2rem;
+	font-size: .8rem;
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 400;
+	color: #A3A4A9;
+	background: #2C2C2C;
+	border: 1.5px solid #2C2C2C;
+	box-shadow: 1px 2px 3px rgba(0,0,0, .25);
+	text-align: center;
+	display: inline-flex;
+	vertical-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 1.5%;
+	cursor: pointer;
+	padding: 1px;
+}
+.dashboard .interacaoMenu button:hover{transform: scale(1.04);}
+.dashboard .interacaoMenu button:active{transform: scale(1);}
+.dashboard .analytics{
+	background: #A3A4A9;
+	width: 25rem;
+	height: 12rem;
+	position: absolute;
+	right: 11.1%;
+	top: 5%;
+}
+.dashboard .analytics p{
+	background: #A3A4A9;
+	color: #ECECED;
+	display: flex;
+	text-align: center;
+	vertical-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 20% 0;
+	padding: 1px;
+}
+.dashboard .paragraph{
+	text-align: center;
+	margin: 2% 0;
+}
+.dashboard .paragraph::after{
+	content: '';
+	background: currentColor;
+	width: 40%;
+	height: 2.5px;
+	display: inline-flex;
+	margin-left: 1%;
+}
+.dashboard .paragraph::before{
+	content: '';
+	background: currentColor;
+	width: 40%;
+	height: 2.5px;
+	display: inline-flex;
+	margin-right: 1%;
+}
+.dashboard .analyticsAtivos{
+	background: #A3A4A9;
+	width: 33rem;
+	height: 15.5rem;
+	position: absolute;
+	right: 11%;
+	top: 58%;
+}
+.dashboard .value{
+	display: inline-flex;
+}
+.dashboard .ativosMercado{
+	margin: 2%;
+}
+.dashboard .Ac2{
+	margin: 1% 0;
+}
+.dashboard .Ac2:hover{
+	cursor: pointer;
+	margin-left: 2%;
+}
+.dashboard .ativosMercado i{
+	color: #F6E018;
+}
+.fa-btc{margin: 0 .5% 0;}
+.transacoes{
+	position: relative;
+	width: 63%;
+	height: 15rem;
+	bottom: 20%;
+	left: 31%;
+	background: #333;
+	padding: 2%;
+	box-shadow: 1.5px 2px 3.5px rgba(0,0,0, .10);
+	margin: 0  0 2%;
+}
+.transacoes h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin: -1% 0 1%;
+	color: #ECECED;
+}
+.transacoes .transacoesClient h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	margin: 0 auto;
+	color: #ECECED;
+}
+.transacoes .transacoesClient p{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+	margin: 0 3% 0;
+	display: inline-flex;
+	flex-direction: column;
+}
+.transacoes .transacoesClient .pagamento{color: #2BFF18;}
+.transacoes .transacoesClient .attention{margin: 0 .5% 0;}
+footer{
+	width: 100%;
+	height: 8.8rem;
+	background: #333;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	padding: 1%;
+	justify-content: space-between;
+}
+footer h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin: 1% 0;
+	color: #ECECED;
+	text-align: left;
+}
+footer ul li, footer ul li a{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+}
+footer .socialMedia a{
+	font-size: 1rem;
+	color: #A3A4A9;
+}
+footer .socialMedia .mediaSocial{
+	font-size: 1.5rem;
+	margin: 1%;
+	text-align: center;
+}
+footer .linksUteis{margin: 0 5% 1%;}
+footer .socialMedia li{margin: .5% 0 50%; display: inline-flex; text-align: center;}
+footer .nftFooter{margin: 0 4.5% 1%;}
+footer li a:hover{text-decoration: underline;}
+footer .socialMedia .creditos p{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	color: #A3A4A9;
+	display: inline-flex;
+}
+::marker{color: rgba(43, 255, 24, .45);}
+@media (max-width: 1050px){
+	body{overflow-x: hidden;}
+	header .nav{display: none;}
+	header{
+		padding: 1.5% 0;
+		height: 7vw;
+	}
+	header .nav-menu{
+		background: #333;
+		width: 100%;
+		height: 17vh;
+		animation: toggle .5s ease-in-out;
+		display: none;
+		transition: all .3s ease;
+	}
+	header .nav-menu ul li{
+		color: #A3A4A9;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.1rem;
+		font-weight: 200;
+		text-align: center;
+		display: block;
+		margin: 1.5%;
+	}
+	header .nav-menu ul li a{color: #C9E9F2;}
+	header .nav-mobile i{display: block;}
+	.left-menu{display: none;}
+	footer{position: absolute;bottom: 0;}
+}
+@keyframes toggle{
+	from{width: 30%;}
+	to{width: 100%;}
+}
+.active{display: block;}
+.noactive{display: none;}
+body::-webkit-scrollbar,.dashboard::-webkit-scrollbar{
+	width: 0px;
+	height: 0px;
+	background: #333;
+
+}
+
+* button:focus{outline: none;}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Br Wallet | Home</title>
+	<link rel="shortcut icon" href="assets/bandeira.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.cdnfonts.com/s/15051/Segoe UI Bold.woff">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/all.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div>
+				<h2 class="green">Br</h2>
+				<h2 class="yellow">Wal</h2>
+				<h2 class="green">let</h2>
+			</div>
+
+			<div class="nav-mobile" id="nav">
+				<i class="fas fa-bars" id="bar"></i>
+				<i class="fab fa-btc btc" id="btc"></i>
+			</div>
+
+			<div class="menu">
+				<nav class="nav-menu" id="menu-nav">
+					<ul>
+						<li>
+							<a href="#manutenção">HOME</a>
+						</li>
+
+						<li>
+							<a href="#manutenção">SOBRE</a>
+						</li>
+
+						<li>
+							<a href="#manutenção">FAQ</a>
+						</li>
+
+						<li>
+							<a href="#manutenção">INDIQUE</a>
+						</li>					
+					</ul>
+			</nav>
+			</div>
+			<nav class="nav-desktop nav">
+				<ul>
+					<li>
+						<a href="#manutenção">HOME</a>
+					</li>
+
+					<li>
+						<a href="#manutenção">SOBRE</a>
+					</li>
+
+					<li>
+						<a href="#manutenção">FAQ</a>
+					</li>
+
+					<li>
+						<a href="#manutenção">INDIQUE</a>
+					</li>					
+				</ul>
+			</nav>
+		</div>
+
+		<div class="account">
+			<h2 class="accountIcon"><i class="fas fa-user-circle"></i></h2>
+		</div>
+	</header>
+	<section class="left-menu">
+		<article class="indique">
+			<h2>Codigo de Convite</h2>
+			<p>Ao usar  codigo de convite, voçê passa a pagar taxa 0% quando fizer transações na rede Etherum.</p>
+			<form method="POST" action="" id="form">
+				<input type="text" placeholder="code" id="code" maxlength="8" size="8">
+				<button type="submit">Aprovar</button>
+			</form>
+			<p id="codeUse"></p>
+			<div class="erro">
+				<p id="erro"></p>
+			</div>
+		</article>
+
+		<article class="nftw2">
+			<div class="nft">
+				<h2>O que é NFT?</h2>
+				<p>Um token não fungível é um tipo especial de token criptográfico que representa algo único. Diferentemente das criptomoedas como o Bitcoin e de vários outros tokens utilitários, os NFTs não são mutuamente intercambiáveis. Um item fungível, como o dinheiro, pode ser trocado por outro.</p>
+			</div>
+		</article>
+
+		<article class="convide">
+			<h2>Convide e ganhe!!</h2>
+			<p>Convidando um amigo voçê ganha $2 em uma crypto da sua preferência, e 5% de cashback.</p>
+			<p id="myCode">Seu código: </p>
+		</article>
+
+		<article class="ativos">
+			<h2>Compre Ativos</h2>
+			<p>Comprando ativos na BrWallet voçê consegue ate 5% de cashback em cryptos como: Bitcoin, Etherum, Cardano e Solano.</p>
+		</article>
+
+		<article class="googleADS"><p>Reservado para ADS.</p></article>
+	</section>
+
+	<section class="dashboard">
+		<article class="saldo">
+			<div class="hidden">
+				<i class="fas fa-eye-slash hide" id="hide"></i>
+				<i class="fas fa-eye view" id="view"></i>
+			</div>
+			<h2>Seu Saldo</h2>
+			<span><p id="saldoBank" class="saldoBank">R$43.324,00</p><p class="porcent" id="percent">(+10.3%)</p></span>
+			<div class="carteira">
+				<h2>Endereço da carteira</h2>
+				<p class="end">xf5a800CE22468fa834222ae25fd</p>
+			</div>
+			<div class="analyticsContainer">
+				<canvas id="chartAccount" class="analytics"></canvas>
+			</div>
+			<div class="interacaoMenu">
+				<button>Enviar / Receber</i></button>
+				<button>Comprar</button>
+				<button>Converter</button>
+			</div>
+		</article>
+
+		<p class="paragraph">Valores dos Ativos</p>
+
+		<article class="ativosMercado">
+			<div class="analyticsAtivos">
+			</div>
+			<div class="btcAtivo Ac2">	
+				<p><i class="fab fa-btc"></i>BitCoin (BTC) <p class="value">R$342.562,40</p></p>
+			</div>
+			<div class="ethAtivo Ac2">	
+				<p><i class="fab fa-btc"></i>Etherum (ETH) <p class="value">R$25.240,40</p></p>
+			</div>
+
+			<div class="solAtivo Ac2">	
+				<p><i class="fab fa-btc"></i>Solana (SOL) <p class="value">R$342.562,40</p></p>
+			</div>
+			<div class="adaAtivo Ac2">	
+				<p><i class="fab fa-btc"></i>Cardano (ADA) <p class="value">R$342.562,40</p></p>
+			</div>
+
+			<div class="dotAtivo Ac2">	
+				<p><i class="fab fa-btc"></i>Polkadot (DOT) <p class="value">R$342.562,40</p></p>
+			</div>
+			<div class="dogeAtivo Ac2">	
+				<p><i class="fab fa-btc"></i>DogeCoin (DOGE) <p class="value">R$342.562,40</p></p>
+			</div>
+
+		</article>
+	</section>
+
+	<section class="transacoes">
+		<h2>Todas as suas transações</h2>
+		<article class="transacoesClient">
+			<div class="atividadeAccount">
+				<h2><i class="fas fa-exclamation-circle attention"></i>Atividade na conta - 25 SET</h2>
+				<p>voçê recebeu Etherum de Apple INC.</p><p class="pagamento">+0.00030000 ETH</p>
+
+				<h2><i class="fas fa-exclamation-circle attention"></i>Atividade na conta - 12 FEV</h2>
+				<p>voçê recebeu Bitcoin de Amazon INC.</p><p class="pagamento">+22.030000 BTC</p>
+
+				<h2><i class="fas fa-exclamation-circle attention"></i>Atividade na conta - 29 OCT</h2>
+				<p>voçê recebeu Shiba Inu de SpaceX LTD.</p><p class="pagamento">+392.485.739 SHIBA</p>
+
+				<h2><i class="fas fa-exclamation-circle attention"></i>Atividade na conta - 14 SET</h2>
+				<p>voçê recebeu Cardano de Binance INC.</p><p class="pagamento">+310.4000 ADA</p>
+
+				<h2><i class="fas fa-exclamation-circle attention"></i>Atividade na conta - 10 OCT</h2>
+				<p>voçê recebeu Solano de Tesla LTD.</p><p class="pagamento">+2.392.485.739 SOL</p>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<div class="linksUteis">
+			<h2>Links Uteis</h2>
+	
+			<ul>
+				<li><a href="#manutencao">Como comprar cryptos</a></li>
+				<li><a href="#manutencao">Como criar uma conta</a></li>
+				<li><a href="#manutencao">Criptomoeda VideoAula</a></li>
+				<li><a href="#manutencao">OpenSea Account</a></li>
+			</ul>
+		</div>
+
+		<div class="socialMedia">
+			<h2>Redes Sociais</h2>
+
+			<ul>
+				<li><a href="#manutencao"><i class="fab fa-instagram mediaSocial"></i></a></li>
+				<li><a href="#manutencao"><i class="fab fa-facebook mediaSocial"></i></a></li>
+				<li><a href="#manutencao"><i class="fas fa-envelope mediaSocial"></i></a></li>
+			</ul>
+
+			<div class="creditos">
+				<p>Powered by: 
+				<a href="#">
+					<i class="fab fa-github"></i>
+				Rique
+				</a>
+			</p>
+			</div>
+		</div>
+
+		<div class="nftFooter">
+			<h2>NFT</h2>
+			
+			<ul>
+				<li><a href="#manutencao">Como Comprar?</a></li>
+				<li><a href="#manutencao">Como criar a sua?</a></li>
+				<li><a href="#manutencao">Como vender a sua nft?</a></li>
+				<li><a href="#manutencao">Jogos play-to-earn</a></li>
+			</ul>
+		</div>
+	</footer>
+<script src="js/nav.js"></script>
+<script src="js/indiqueBonus.js"></script>
+<script src="js/saldoBank.js"></script>
+<!-- <script src="js/chartConfig.js"></script> -->
+<script src="modules/package/dist/chart.js"></script>
+</body>
+</html>
+<!-- Utilitario -->
+<!-- 
+	<i class="fas fa-eye-slash"></i>
+	<i class="fas fa-eye"></i> 
+-->
