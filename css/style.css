@@ -438,12 +438,15 @@ footer .socialMedia .creditos p{
 	display: inline-flex;
 }
 ::marker{color: rgba(43, 255, 24, .45);}
-@media screen  and (max-width: 1200px){
+@media (max-width: 720px){
 	body{overflow-x: hidden;}
 	header .nav{display: none;}
 	header{
 		padding: 1.5% 0;
-		height: 4vh;
+		height: 4.5vh;
+		width: 100%;
+		overflow: hidden;
+		position: inherit;
 	}
 	header .nav-menu{
 		background: #333;
@@ -478,24 +481,33 @@ footer .socialMedia .creditos p{
 	.ativos,
 	.googleADS{display: none;}
 	.dashboard{
-		width: 95%;
-		height: 70%;
-                position: absolute;
-		left: 50%;
-		top: 25%;
-                transform: translate(-0%, -50%;
+		width: 93%;
+		left: 0;
+		right: 0;
 		margin: 0 auto;
+		height: 35rem;
+		top: 22.5rem;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		justify-content: flex-start;
+		align-items: stretch;
+		transform: translate(-0%, -50%);
 		background: #333;
-		padding: 2.5%;
+		padding: 2%;
 		box-shadow: 3px 3px 5px rgba(0,0,0, .20);
-		z-index: 1;
 	}
 	.dashboard h2{
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 500;
 		font-size: 1.5rem;
-		margin: 1% 0;
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+		margin: .5% 0;
 		color: #ECECED;
+		letter-spacing: 0.5px;
 	}
 	.dashboard p{
 		font-family: 'Segoe UI', sans-serif;
@@ -503,22 +515,22 @@ footer .socialMedia .creditos p{
 		font-size: 1rem;
 		color: #A3A4A9;
 		margin: 0 auto;
+		display: flex;
+		justify-content: flex-start;
 	}
 	.dashboard span{display: inline-flex;}
 	.dashboard .saldoBank{font-size: 2.2rem;}
 	.dashboard .porcent{color: #4FF175; margin-left: 1%;}
 	.dashboard .hidden{
-		position: absolute; 
+		display: flex;
 		color: #A3A4A9;
-		right: 3%;
 		font-size: 1.5rem;
 		cursor: pointer;
 	}
-	.dashboard .hidden i{position: absolute; right: 3.5%;}
+	.dashboard .hidden i{display: flex; justify-content: flex-end;}
 	.dashboard .hidden .view{display: none;}
 	.end{
 		user-select: text;
-		user-drag: text;
 		-webkit-user-drag: none;
 	}
 	.end::selection{background: #A3A4A9;}
@@ -526,10 +538,12 @@ footer .socialMedia .creditos p{
 	.dashboard .interacaoMenu{
 		width: 100%;
 		display: inline-flex;	
+		margin: 0 auto;
+		text-align: center;
 	}
 	.dashboard .interacaoMenu button{
-		width: 25rem;
-		height: 2.3rem;
+		width: 9.7rem;
+		height: 2.5rem;
 		font-size: .8rem;
 		font-family: 'Segoe UI', sans-serif;
 		font-weight: 400;
@@ -544,14 +558,17 @@ footer .socialMedia .creditos p{
 		justify-content: center;
 		margin: 1.5%;
 		cursor: pointer;
-		padding: 1px;
-	}
+		padding: 1px;}
 	.dashboard .interacaoMenu button:hover{transform: scale(1.04);}
 	.dashboard .interacaoMenu button:active{transform: scale(1);}
 	.dashboard .analytics{display: none;}
 	.dashboard .paragraph{
-		text-align: center;
-		margin: 2% 0;
+		text-align: left;
+		margin: 2.5% 0;
+		display: inline-flex;
+		justify-items: center;
+		justify-content: center;
+	
 	}
 	.dashboard .paragraph::after{
 		content: '';
@@ -575,37 +592,60 @@ footer .socialMedia .creditos p{
 		height: 16rem;
 		position: absolute;
 		right: 3%;
-		top: 49%;
-		display: block;
+		top: 52.5%;
+		display: flex;
+		z-index: 21;
 	}
 	.dashboard .value{	
 		display: inline-flex;
 	}
 	.dashboard .ativosMercado{
-		margin: 2%;
+		margin: .5%;
+		display: block;
 	}
 	.dashboard .Ac2{
-		margin: 1% 0 2%;
+		margin: .5% 0 .5%;
 	}
 	.dashboard .Ac2:hover{
 		cursor: pointer;
-		margin-left: 2%;
+		margin-left: 1%;
 	}
 	.dashboard .ativosMercado i{
 		color: #F6E018;
 	}
 	.fa-btc{margin: 0 .5% 0;}
+	/* p{width: 93%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		height: 35rem;
+		top: 22.5rem;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		justify-content: flex-start;
+		align-items: stretch;
+		transform: translate(-0%, -50%);
+		background: #333;
+		padding: 2%;
+		box-shadow: 3px 3px 5px rgba(0,0,0, .20);
+	} */
 	.transacoes{
-		position: relative;
-		width: 63%;
-		height: 15rem;
-		bottom: 20%;
-		left: 31%;
+		position: absolute;
+		width: 93%;
+		height: 20rem;
+		bottom: -11.5%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
 		background: #333;
 		padding: 2%;
 		box-shadow: 1.5px 2px 3.5px rgba(0,0,0, .10);
-		margin: 0  0 4%;
-		display: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		flex-wrap; wrap;
 	}
 	.transacoes h2{
 		font-family: 'Open Sans', sans-serif;
@@ -614,6 +654,7 @@ footer .socialMedia .creditos p{
 		margin: -1% 0 5%;
 		color: #ECECED;
 	}
+	.transacoes .tw2{text-align: center;}
 	.transacoes .transacoesClient h2{
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 500;
@@ -637,7 +678,7 @@ footer .socialMedia .creditos p{
 		height: 13rem;
 		background: #333;
 		position: absolute;
-		bottom: -20%;
+		bottom: -40%;
 		left: 0;
 		display: flex;
 		padding: 1rem;
